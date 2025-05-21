@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page search-page active">
+        <div class="container">
+            <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+            <div class="search">
+                <input type="text" placeholder="Enter city name" id="city-input">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="popular-cities">
+                <h3>Popular Cities</h3>
+                <div class="city-grid">
+                    <button class="city-btn" data-city="London">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400')"></div>
+                        <span>London</span>
+                    </button>
+                    <button class="city-btn" data-city="New York">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400')"></div>
+                        <span>New York</span>
+                    </button>
+                    <button class="city-btn" data-city="Tokyo">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400')"></div>
+                        <span>Tokyo</span>
+                    </button>
+                    <button class="city-btn" data-city="Paris">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400')"></div>
+                        <span>Paris</span>
+                    </button>
+                    <button class="city-btn" data-city="Dubai">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400')"></div>
+                        <span>Dubai</span>
+                    </button>
+                    <button class="city-btn" data-city="Singapore">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400')"></div>
+                        <span>Singapore</span>
+                    </button>
+                    <button class="city-btn" data-city="Mumbai">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=400')"></div>
+                        <span>Mumbai</span>
+                    </button>
+                    <button class="city-btn" data-city="Sydney">
+                        <div class="city-img" style="background-image: url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400')"></div>
+                        <span>Sydney</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page result-page">
+        <div class="container">
+            <button class="back-btn"><i class="fas fa-arrow-left"></i> Back</button>
+            <div class="weather-info">
+                <h2 id="city-name"></h2>
+                <div id="weather-icon"></div>
+                <div id="temperature"></div>
+                <div id="description"></div>
+                <div id="humidity"></div>
+                <div id="wind-speed"></div>
+                
+                <div class="forecast-section">
+                    <h3>12-Hour Forecast</h3>
+                    <div class="forecast-container" id="hourly-forecast"></div>
+                </div>
+
+                <div class="comparison">
+                    <h3>Current Weather Stats</h3>
+                    <div id="temp-comparison"></div>
+                    <div id="humidity-comparison"></div>
+                </div>
+                <div class="recommendations">
+                    <h3>Today's Recommendations</h3>
+                    <div id="weather-advice"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
